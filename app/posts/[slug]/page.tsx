@@ -3,7 +3,6 @@ import { draftMode } from "next/headers";
 
 import MoreStories from "../../more-stories";
 import Avatar from "../../avatar";
-import Date from "../../date";
 import CoverImage from "../../cover-image";
 
 import { Markdown } from "@/lib/markdown";
@@ -51,9 +50,7 @@ export default async function PostPage({
               <Avatar name={post.author.name} picture={post.author.picture} />
             )}
           </div>
-          <div className="mb-6 text-lg">
-            <Date dateString={post.date} />
-          </div>
+          <div className="mb-6 text-lg"></div>
         </div>
 
         <div className="mx-auto max-w-2xl">
