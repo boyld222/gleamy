@@ -18,7 +18,9 @@ export default {
         marquee: 'marquee 60s linear infinite',
       },
       transformOrigin: {
-        'top-left-4/5-1': '80% 100%',
+        'top-left-4/5-1': '50% 100%',
+        'top-left-7/10-1': '57% 100%',
+
       },
       keyframes: {
         marquee: {

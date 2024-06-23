@@ -7,17 +7,17 @@ interface Props {
 }
 
 export default function StrapLine({ bgColor }: Props) {
-  const arr = [1, 2];
+  const arr = [1, 2, 3];
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, ease: "easeInOut", delay: 3 }}
       className={clsx(
-        `absolute w-[200%] h-[104px] flex items-center justify-center origin-top-left-4/5-1 right-[-50%] gap-20`,
+        `absolute w-[200%] h-[104px] flex items-center justify-center right-[-50%] gap-20`,
         bgColor === "white"
-          ? "bottom-[-10%] bg-white rotate-[44.71deg]"
-          : "bottom-[40%] bg-[#212121] rotate-[-12.95deg]"
+          ? "top-[63px] bg-white rotate-[44.71deg] origin-top-left-7/10-1"
+          : "bottom-[237px] bg-[#212121] rotate-[-12.95deg] origin-top-left-4/5-1 "
       )}
     >
       {arr.map((item) => (

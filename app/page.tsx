@@ -4,6 +4,7 @@ import { draftMode } from "next/headers";
 import { getTitleHero } from "@/lib/api";
 import Loader from "./components/Layout/Loader";
 import HeroSection from "./components/Section/Hero/HeroSection";
+import AboutSection from "./components/Section/About/AboutSection";
 
 
 
@@ -54,6 +55,8 @@ export default async function Page() {
     <div className="w-full bg-black">
       <Loader />
       <HeroSection title={heroContent.title}/>
+      <AboutSection/>
+
       {/* {heroPost && (
         <HeroPost
           title={heroPost.title}
