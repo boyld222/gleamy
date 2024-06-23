@@ -1,7 +1,8 @@
+import { CMS_NAME } from "@/lib/constants";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import { Inter, Poppins } from "next/font/google";
-import { EXAMPLE_PATH, CMS_NAME } from "@/lib/constants";
-import Loader from "./components/Layout/Loader";
+import Header from "./components/Layout/Header";
+import Sidebar from "./components/Layout/Sidebar";
 
 export const metadata = {
   title: `Next.js and ${CMS_NAME} Example`,
@@ -9,7 +10,6 @@ export const metadata = {
 };
 
 const poppins = Poppins({
-  variable: "--font-poppins",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600"],
@@ -21,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={poppins.className}>
       <body>
-        <Loader />
-        <section className="min-h-screen">
+        <Header />
+        <Sidebar />
+        <section className="min-h-screen w-screen bg-black">
           <main>{children}</main>
         </section>
       </body>
