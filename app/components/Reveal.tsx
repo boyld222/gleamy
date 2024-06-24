@@ -6,8 +6,8 @@ interface Props {
   children: React.ReactElement;
   className?: string;
   classNameItem?: string;
-  custom?: number;
-  isInitial?: boolean
+  custom?: number; //Ordered Animation
+  isInitial?: boolean;
 }
 
 export default function Reveal({
@@ -15,7 +15,7 @@ export default function Reveal({
   className,
   classNameItem,
   custom = 1,
-  isInitial = false
+  isInitial = false,
 }: Props) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

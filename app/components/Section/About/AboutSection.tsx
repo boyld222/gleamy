@@ -17,8 +17,8 @@ export default function AboutSection({ section }: Props) {
   return (
     <ContentLayout title="About us" logoText="g">
       <Reveal>
-        <div>
-          <div className="flex flex-col gap-[65px]">
+        <div className="pl-[67px]">
+          <div className="flex flex-col gap-[34px]">
             <span className="uppercase text-[40px] leading-[1.9] tracking-[0.02em]">
               {title}
             </span>

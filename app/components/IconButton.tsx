@@ -7,13 +7,21 @@ const openSans = Open_Sans({
   weight: ["400"],
 });
 
-export default function IconButton({ text }: { text: string }) {
+export default function IconButton({
+  text,
+  hideIcon,
+}: {
+  text: string;
+  hideIcon?: boolean;
+}) {
   return (
     <div className="cursor-pointer relative flex items-center justify- w-fit">
       <span className={`text-[24px] z-10 ${openSans.className}`}>{text}</span>
-      <div className="absolute w-fit left-0 right-0 m-auto">
-        <SkewedRectangle />
-      </div>
+      {!hideIcon && (
+        <div className="absolute w-fit left-0 right-0 m-auto">
+          <SkewedRectangle />
+        </div>
+      )}
     </div>
   );
 }
