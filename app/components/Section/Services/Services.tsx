@@ -1,8 +1,5 @@
 import ContentLayout from "../../Layout/ContentLayout";
 import Reveal from "../../Reveal";
-import clsx from "clsx";
-import SkewedRectangle from "../../SkewedRectangle";
-import IconButton from "../../IconButton";
 import Card from "./Card";
 
 interface Props {

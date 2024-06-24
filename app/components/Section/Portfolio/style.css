@@ -1,0 +1,17 @@
+.swiper {
+    width: 1296px;
+    display: flex;
+  }
+ 
+  .phomi-text {
+    position: absolute;
+    top: 0px; /* Adjust this value as needed */
+    right: 0px;
+    transform: translateX(-65%);
+    line-height: 1;
+    font-size: 60px; /* Adjust font size as needed */
+    font-weight: bold;
+    z-index: 10;
+    color: #0F0F0F;
+  }
+ 

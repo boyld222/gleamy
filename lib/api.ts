@@ -103,6 +103,26 @@ export async function getServicesContent(): Promise<any> {
   return entry?.data?.servicesCollection?.items;
 }
 
+export async function getPortfolioContent(): Promise<any> {
+  const query = `
+  query {
+    portfolioCollection {
+      items {
+        title
+        role
+        image {
+          url
+          description
+        }
+      }
+    }
+  }
+  `;
+
+  const entry = await fetchGraphQL(query);
+  return entry?.data?.portfolioCollection?.items;
+}
+
 export async function getPreviewPostBySlug(slug: string | null): Promise<any> {
   const entry = await fetchGraphQL(
     `query {
