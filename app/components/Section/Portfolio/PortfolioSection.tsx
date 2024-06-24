@@ -9,6 +9,7 @@ import ContentLayout from "../../Layout/ContentLayout";
 import { Autoplay } from "swiper/modules";
 import "./style.css"; //Need manual css because third-party
 import clsx from "clsx";
+import ContentfulImage from "@/lib/contentful-image";
 
 interface Props {
   section: {
@@ -31,7 +32,7 @@ export default function PortfolioSection({ section }: Props) {
         slidesPerView={3}
         className="mySwiper"
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
@@ -46,10 +47,12 @@ export default function PortfolioSection({ section }: Props) {
                   !isActive && !isNext ? "mt-[100px]" : "mt-0"
                 )}
               >
-                <img
-                  src={slide.image.url}
+                <ContentfulImage
                   alt={slide.image.description}
                   className=" aspect-[4/3] w-[400px]"
+                  height={300}
+                  width={400}
+                  src={slide.image.url}
                 />
                 <span className="text-[32px] mb-2 text-center mt-10">
                   {slide.title}
