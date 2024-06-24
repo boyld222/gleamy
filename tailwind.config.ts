@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
 
-
 export default {
   content: [
     "./app/**/*.{ts,tsx}",
@@ -15,20 +14,18 @@ export default {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
-        marquee: 'marquee 60s linear infinite',
+        marquee: "marquee 60s linear infinite",
       },
       transformOrigin: {
-        'top-left-4/5-1': '50% 100%',
-        'top-left-7/10-1': '57% 100%',
-
+        "top-left-4/5-1": "50% 50%",
+        "top-left-7/10-1": "57.5% 50%",
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
-     
     },
   },
   future: {
@@ -41,11 +38,11 @@ export default {
         ".transform-style-preserve-3d": {
           "transform-style": "preserve-3d",
         },
-        '.writing-mode-vertical-rl': {
-          'writing-mode': 'vertical-rl',
+        ".writing-mode-vertical-rl": {
+          "writing-mode": "vertical-rl",
         },
-        '.text-orientation-mixed': {
-          'text-orientation': 'mixed',
+        ".text-orientation-mixed": {
+          "text-orientation": "mixed",
         },
         ".rotate-x-90": {
           transform: "rotateX(90deg)",

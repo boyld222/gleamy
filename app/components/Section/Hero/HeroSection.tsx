@@ -9,7 +9,7 @@ interface Props {
 export default function HeroSection({ title }: Props) {
   const splitTitle = title.split(".");
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black text-white pl-[200px] pt-[120px]">
+    <div className="relative w-full h-screen overflow-hidden bg-black text-white pl-[200px] pt-[120px] ">
       <StrapLine bgColor="white" />
       <StrapLine bgColor="black" />
       <Reveal isInitial>

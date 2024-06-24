@@ -69,6 +69,40 @@ export async function getTitleHero(): Promise<any> {
   return extractPost(entry);
 }
 
+export async function getAboutContent(): Promise<any> {
+  const query = `
+  query {
+    aboutUsCollection {
+      items {
+        title
+        button
+        content
+      }
+    }
+  }
+  `;
+
+  const entry = await fetchGraphQL(query);
+  return entry?.data?.aboutUsCollection?.items?.[0];
+}
+
+export async function getServicesContent(): Promise<any> {
+  const query = `
+  query {
+    servicesCollection {
+      items {
+        title
+        cardTitle
+        description
+      }
+    }
+  }
+  `;
+
+  const entry = await fetchGraphQL(query);
+  return entry?.data?.servicesCollection?.items;
+}
+
 export async function getPreviewPostBySlug(slug: string | null): Promise<any> {
   const entry = await fetchGraphQL(
     `query {

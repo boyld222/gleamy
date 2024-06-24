@@ -29,15 +29,7 @@ export default function RootLayout({
         <section className="min-h-screen w-screen bg-black">
           <main>{children}</main>
         </section>
-        <div className="fixed bottom-[58px] right-[92px] bg-transparent z-[9998]">
-        <div className=" w-[110px] h-[110px]">
-          <img
-            src="/logo-watch.png"
-            alt="Circle animated Gleamy Watch Logo div"
-            className="animate-spin-slow w-full h-full"
-          />
-        </div>
-      </div>
+        <Footer />
       </body>
     </html>
   );

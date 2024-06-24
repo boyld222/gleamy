@@ -7,16 +7,17 @@ import IconButton from "../../IconButton";
 interface Props {
   section: {
     title: string;
-    button: string;
-    content: string;
-  };
+    description: string;
+    cardTitle: string;
+  }[];
 }
 
-export default function AboutSection({ section }: Props) {
-  const { title, button, content } = section;
+export default function ServicesSection({ section }: Props) {
+  console.log(section);
   return (
-    <ContentLayout title="About us" logoText="g">
-      <Reveal>
+    <ContentLayout title="Services" logoText="s">
+      <>hihi</>
+      {/* <Reveal>
         <div>
           <div className="flex flex-col gap-[65px]">
             <span className="uppercase text-[40px] leading-[1.9] tracking-[0.02em]">
@@ -35,7 +36,7 @@ export default function AboutSection({ section }: Props) {
             <IconButton text={"Contact Us"} />
           </div>
         </div>
-      </Reveal>
+      </Reveal> */}
     </ContentLayout>
   );
 }

@@ -1,12 +1,10 @@
 import { draftMode } from "next/headers";
 
-
-import { getTitleHero } from "@/lib/api";
+import { getAboutContent, getServicesContent, getTitleHero } from "@/lib/api";
 import Loader from "./components/Layout/Loader";
 import HeroSection from "./components/Section/Hero/HeroSection";
 import AboutSection from "./components/Section/About/AboutSection";
-
-
+import ServicesSection from "./components/Section/Services/Services";
 
 // function HeroPost({
 //   title,
@@ -48,14 +46,17 @@ import AboutSection from "./components/Section/About/AboutSection";
 export default async function Page() {
   const { isEnabled } = draftMode();
   const heroContent = await getTitleHero();
+  const aboutContent = await getAboutContent();
+  const servicesContent = await getServicesContent();
   // const heroPost = allPosts[0];
   // const morePosts = allPosts.slice(1);
 
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-black overflow-hidden">
       <Loader />
-      <HeroSection title={heroContent.title}/>
-      <AboutSection/>
+      <HeroSection title={heroContent.title} />
+      <AboutSection section={aboutContent} />
+      <ServicesSection section={servicesContent} />
 
       {/* {heroPost && (
         <HeroPost

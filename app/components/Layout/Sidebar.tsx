@@ -5,17 +5,17 @@ export default function Sidebar() {
         <img
           src="/logo-sidebar.png"
           alt="Circle animated Gleamy Logo Sidebar"
-          className="animate-spin-slow w-full h-full"
+          className="animate-spin-slow w-full h-full cursor-pointer"
         />
       </div>
       <div className="flex justify-between items-start w-full writing-mode-vertical-rl text-orientation-mixed rotate-180 gap-10 pb-[105.94px]">
-        <p className="uppercas text-white text-sm  whitespace-nowrap rotate-x-">
+        <p className="uppercas text-white text-sm  whitespace-nowrap cursor-pointer">
           Development
         </p>
-        <p className="uppercase text-white text-sm  whitespace-nowrap">
+        <p className="uppercase text-white text-sm  whitespace-nowrap cursor-pointer">
           Designing
         </p>
-        <p className="uppercase text-white text-sm whitespace-nowrap">
+        <p className="uppercase text-white text-sm whitespace-nowrap cursor-pointer">
           Digital Marketing
         </p>
       </div>

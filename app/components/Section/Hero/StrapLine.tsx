@@ -16,8 +16,8 @@ export default function StrapLine({ bgColor }: Props) {
       className={clsx(
         `absolute w-[200%] h-[104px] flex items-center justify-center right-[-50%] gap-20`,
         bgColor === "white"
-          ? "top-[63px] bg-white rotate-[44.71deg] origin-top-left-7/10-1"
-          : "bottom-[237px] bg-[#212121] rotate-[-12.95deg] origin-top-left-4/5-1 "
+          ? "top-[5.83%] bg-white rotate-[44.71deg] origin-top-left-7/10-1"
+          : "bottom-[22%] bg-[#212121] rotate-[-12.95deg] origin-top-left-4/5-1 "
       )}
     >
       {arr.map((item) => (
