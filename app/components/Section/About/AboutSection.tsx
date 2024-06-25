@@ -15,7 +15,7 @@ interface Props {
 export default function AboutSection({ section }: Props) {
   const { title, button, content } = section;
   return (
-    <ContentLayout title="About us" logoText="g">
+    <ContentLayout id="about" title="About us" logoText="g">
       <Reveal>
         <div className="pl-[3.4375%] lg:pl-[67px]">
           <div className="flex flex-col gap-[34px]">

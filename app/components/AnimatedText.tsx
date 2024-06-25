@@ -9,8 +9,8 @@ export default function AnimatedText({ children }: { children: ReactElement }) {
         className="h-full w-full relative"
         transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.3 }}
       >
-        <div className=" h-full w-full text-center group">
-          <div className="h-full w-full text-center flex items-center justify-center transition-all	ease-in-expo duration-[750ms] group-hover:rotate-x-90 transform-style-preserve-3d">
+        <div className=" h-full w-full group">
+          <div className="h-full w-full flex items-center  transition-all	ease-in-expo duration-[750ms] group-hover:rotate-x-90 transform-style-preserve-3d">
             <div className="group-hover:-translate-y-full transition-all ease-in-expo duration-[750ms] group-hover:opacity-0">
               {children}
             </div>

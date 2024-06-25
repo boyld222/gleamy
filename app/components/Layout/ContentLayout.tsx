@@ -6,6 +6,7 @@ interface Props {
   title: string;
   hasFooter?: boolean;
   hideLogoTextMobile?: boolean;
+  id: string;
 }
 
 export default function ContentLayout({
@@ -14,9 +15,13 @@ export default function ContentLayout({
   logoText,
   hasFooter = false,
   hideLogoTextMobile = false,
+  id,
 }: Props) {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-black text-white lg:pl-[200px]">
+    <section
+      id={id}
+      className="relative w-full min-h-screen overflow-hidden bg-black text-white lg:pl-[200px]"
+    >
       <div className="pl-[4.76%] pr-[4.76%] lg:pt-[126px] 2xl:pl-[101.42px] 2xl:pr-[0px]">
         <div>
           <span className="uppercase text-[40px]">{title}</span>
@@ -39,6 +44,6 @@ export default function ContentLayout({
           the cre8tive
         </div>
       )}
-    </div>
+    </section>
   );
 }

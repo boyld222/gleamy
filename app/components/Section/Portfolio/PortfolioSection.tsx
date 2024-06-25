@@ -34,7 +34,13 @@ export default function PortfolioSection({ section }: Props) {
   }, []);
 
   return (
-    <ContentLayout title="Portfolio" logoText="p" hasFooter hideLogoTextMobile>
+    <ContentLayout
+      id="portfolio"
+      title="Portfolio"
+      logoText="p"
+      hasFooter
+      hideLogoTextMobile
+    >
       <div className="w-full portfolio-wrapper">
         <Swiper
           watchSlidesProgress={true}

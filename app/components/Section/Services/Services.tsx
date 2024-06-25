@@ -12,7 +12,7 @@ interface Props {
 
 export default function ServicesSection({ section }: Props) {
   return (
-    <ContentLayout title="Services" logoText="s" hasFooter>
+    <ContentLayout id="services" title="Services" logoText="s" hasFooter>
       <div className="flex flex-col gap-12 lg:gap-8 xl:flex-row">
         {section?.map((item, i) => {
           return (
