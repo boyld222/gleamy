@@ -54,7 +54,7 @@ export default {
           transform: "rotateX(-90deg) translateY(12px)",
         },
         ".-rotate-x-90-translate-y-8": {
-          transform: "rotateX(-90deg) translateY(8px)",
+          transform: "rotateX(-90deg) translateY(-5px)",
         },
         ".first-letter-text": {
           "-webkit-text-fill-color": "black",

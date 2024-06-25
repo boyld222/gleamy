@@ -17,7 +17,7 @@ export default function ContentLayout({
 }: Props) {
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-black text-white lg:pl-[200px]">
-      <div className="pl-[4.76%] pr-[4.76%] lg:pt-[126px] lg:pl-[101.42px] lg:pr-[0px]">
+      <div className="pl-[4.76%] pr-[4.76%] lg:pt-[126px] 2xl:pl-[101.42px] 2xl:pr-[0px]">
         <div>
           <span className="uppercase text-[40px]">{title}</span>
           <hr className="w-[61px]" />
@@ -35,7 +35,7 @@ export default function ContentLayout({
         </div>
       </div>
       {hasFooter && (
-        <div className="text-[90px] uppercase  font-bold transparent-border-text text-[#4D4D4D] opacity-50 lg:translate-x-[-172px] lg:translate-y-[-117px] lg:text-[180px]">
+        <div className="text-[90px] uppercase  font-bold transparent-border-text text-[#4D4D4D] opacity-50 lg:translate-x-[-172px] lg:translate-y-[-117px] lg:text-[180px] md:text-[140px]">
           the cre8tive
         </div>
       )}

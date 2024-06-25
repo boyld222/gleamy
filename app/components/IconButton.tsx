@@ -15,7 +15,7 @@ export default function IconButton({
   hideIcon?: boolean;
 }) {
   return (
-    <div className="cursor-pointer relative flex items-center justify- w-fit">
+    <div className="cursor-pointer relative flex items-center w-fit text-2xl font-bold pb-1 text-white transition-colors duration-300  hover-underline">
       <span className={`text-[24px] z-10 ${openSans.className}`}>{text}</span>
       {!hideIcon && (
         <div className="absolute w-fit left-0 right-0 m-auto">
