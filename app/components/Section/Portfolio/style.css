@@ -15,3 +15,17 @@
     color: #0F0F0F;
   }
  
+
+  @media (max-width: 640px) {
+    .phomi-text {
+      display: none;
+    }
+    .portfolio-wrapper-parent{
+      width: 100%;
+    }
+    .portfolio-wrapper{
+      .mySwiper{
+        width: 100%;
+      }
+    }
+}
