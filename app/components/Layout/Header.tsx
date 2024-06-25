@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <header className=" fixed top-0 w-full h-[120px] bg-transparent flex justify-between items-center px-[101.12px] z-[9998]">
-      <div className="text-white flex gap-4 text-sm">
+    <header className="fixed top-0 w-full h-[120px] bg-transparent flex  items-center justify-center lg:justify-between lg:px-[101.12px] z-[9998]">
+      <div className="text-white  gap-4 text-sm hidden lg:flex">
         <span className="cursor-pointer">FB</span>{" "}
         <span className="text-[#FF7E21]">●</span>{" "}
         <span className="cursor-pointer">IN</span>{" "}
@@ -13,9 +13,9 @@ export default function Header() {
       <img
         src="/logo-header.png"
         alt="Header Logo"
-        className="w-[205.75px] cursor-pointer"
+        className="w-[150px] cursor-pointer lg:w-[205.75px]"
       />
-      <div className="flex justify-between items-center gap-10">
+      <div className="hidden justify-between items-center gap-10 lg:flex">
         <img
           className="cursor-pointer"
           src="/images/search.png"
@@ -28,6 +28,11 @@ export default function Header() {
           alt="Menu Icon"
         />
       </div>
+      <img
+        className="absolute right-[5.27%] cursor-pointer w-[28px] lg:hidden"
+        src="/images/hamburg.png"
+        alt="Menu Icon"
+      />
     </header>
   );
 }

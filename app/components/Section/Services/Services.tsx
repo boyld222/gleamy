@@ -13,7 +13,7 @@ interface Props {
 export default function ServicesSection({ section }: Props) {
   return (
     <ContentLayout title="Services" logoText="s" hasFooter>
-      <div className="flex gap-8">
+      <div className="flex flex-col gap-12 lg:gap-8 lg:flex-row">
         {section?.map((item, i) => {
           return (
             <Reveal key={i} custom={i}>

@@ -1,6 +1,6 @@
 export default function Sidebar() {
   return (
-    <div className="fixed left-0 h-full w-[200px] bg-transparent mt-[120px] ml-[101.12px] pt-[17.6px] z-[9998]">
+    <div className="fixed hidden left-0 h-full w-fit bg-transparent ml-[5.27%] mt-[120px] lg:block lg:w-[200px] lg:ml-[101.12px] pt-[17.6px] z-[9998]">
       <div className=" w-[96.58px] h-[96.06px]">
         <img
           src="/logo-sidebar.png"

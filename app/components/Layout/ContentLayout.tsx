@@ -12,21 +12,21 @@ export default function ContentLayout({
   hasFooter = false,
 }: Props) {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-black text-white pl-[200px] pt-[120px]">
-      <div className="pt-[126px] pl-[101.42px]">
+    <div className="relative w-full min-h-screen overflow-hidden bg-black text-white lg:pl-[200px]">
+      <div className="pl-[4.76%] pr-[4.76%] lg:pt-[126px] lg:pl-[101.42px] lg:pr-[0px]">
         <div>
           <span className="uppercase text-[40px]">{title}</span>
           <hr className="w-[61px]" />
         </div>
-        <div className="flex items-start gap-[66px] pt-[131px]">
-          <span className="transparent-border-text text-[454px] text-[#363636] leading-none translate-y-[-128px]">
+        <div className="flex items-start pt-[12.13%] gap-[3.4375%] lg:gap-[66px] lg:pt-[131px]">
+          <span className="absolute left-0 transparent-border-text text-[454px] text-[#363636] leading-none lg:translate-y-[-128px] lg:static">
             {logoText}
           </span>
           <div>{children}</div>
         </div>
       </div>
       {hasFooter && (
-        <div className="translate-x-[-172px] translate-y-[-117px]  uppercase text-[180px] font-bold transparent-border-text text-[#4D4D4D] opacity-50">
+        <div className="text-[90px] uppercase  font-bold transparent-border-text text-[#4D4D4D] opacity-50 lg:translate-x-[-172px] lg:translate-y-[-117px] lg:text-[180px]">
           the cre8tive
         </div>
       )}

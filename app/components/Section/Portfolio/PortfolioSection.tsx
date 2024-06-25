@@ -36,6 +36,12 @@ export default function PortfolioSection({ section }: Props) {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
+        // breakpoints={{
+        //   640: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 0,
+        //   },
+        // }}
       >
         <div className="phomi-text">Phomi</div>
         {newContentArray.reverse().map((slide, index) => (
