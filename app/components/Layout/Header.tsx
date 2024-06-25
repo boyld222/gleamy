@@ -23,11 +23,14 @@ export default function Header() {
         className="w-[150px] cursor-pointer lg:w-[205.75px]"
       />
       <div className="hidden justify-between items-center gap-10 lg:flex">
-        <img
-          className="cursor-pointer"
-          src="/images/search.png"
-          alt="Search Icon"
-        />
+        <AnimatedText>
+          <img
+            className="cursor-pointer"
+            src="/images/search.png"
+            alt="Search Icon"
+          />
+        </AnimatedText>
+
         <img src="/images/line.png" alt="Line" />
         <AnimatedText>
           <img

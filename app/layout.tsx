@@ -26,7 +26,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Sidebar />
-        <section className="min-h-screen w-screen bg-black">
+        <section className="min-h-screen w-full bg-black">
           <main>{children}</main>
         </section>
         <Footer />
