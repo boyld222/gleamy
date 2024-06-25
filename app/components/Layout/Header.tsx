@@ -40,14 +40,12 @@ export default function Header() {
           />
         </AnimatedText>
       </div>
-      <div className="lg:hidden">
-        <AnimatedText>
-          <img
-            className="absolute right-[5.27%] cursor-pointer w-[28px]"
-            src="/images/hamburg.png"
-            alt="Menu Icon"
-          />
-        </AnimatedText>
+      <div className="block lg:hidden">
+        <img
+          className="absolute right-[5.27%] cursor-pointer w-[28px]"
+          src="/images/hamburg.png"
+          alt="Menu Icon"
+        />
       </div>
     </header>
   );
