@@ -1,8 +1,11 @@
+import clsx from "clsx";
+
 interface Props {
   children: React.ReactElement;
   logoText?: string;
   title: string;
   hasFooter?: boolean;
+  hideLogoTextMobile?: boolean;
 }
 
 export default function ContentLayout({
@@ -10,6 +13,7 @@ export default function ContentLayout({
   title,
   logoText,
   hasFooter = false,
+  hideLogoTextMobile = false,
 }: Props) {
   return (
     <div className="relative w-full min-h-screen overflow-hidden bg-black text-white lg:pl-[200px]">
@@ -19,7 +23,12 @@ export default function ContentLayout({
           <hr className="w-[61px]" />
         </div>
         <div className="flex items-start pt-[12.13%] gap-[3.4375%] lg:gap-[66px] lg:pt-[131px]">
-          <span className="absolute left-0 transparent-border-text text-[454px] text-[#363636] leading-none lg:translate-y-[-128px] lg:static">
+          <span
+            className={clsx(
+              `absolute left-0 transparent-border-text text-[454px] text-[#363636] leading-none lg:translate-y-[-128px] lg:static`,
+              hideLogoTextMobile && "hidden lg:inline"
+            )}
+          >
             {logoText}
           </span>
           <div>{children}</div>
