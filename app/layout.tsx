@@ -6,8 +6,8 @@ import Sidebar from "./components/Layout/Sidebar";
 import Footer from "./components/Layout/Footer";
 
 export const metadata = {
-  title: `Next.js and ${CMS_NAME} Example`,
-  description: `This is a blog built with Next.js and ${CMS_NAME}.`,
+  title: `Gleamy`,
+  description: `Gleamy Landing Page.`,
 };
 
 const poppins = Poppins({
