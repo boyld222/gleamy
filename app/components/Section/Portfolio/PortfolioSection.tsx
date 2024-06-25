@@ -65,7 +65,7 @@ export default function PortfolioSection({ section }: Props) {
                 >
                   <ContentfulImage
                     alt={slide.image.description}
-                    className=" aspect-[4/3] w-[400px]"
+                    className=" aspect-[4/3] w-[100%] lg:w-[400px]"
                     height={300}
                     width={400}
                     src={slide.image.url}
