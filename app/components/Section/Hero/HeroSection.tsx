@@ -16,7 +16,7 @@ export default function HeroSection({ title }: Props) {
         <div className="relative px-[4.76%] pt-[25.55%]  lg:pl-[91.42px] lg:pt-[135.6px] h-full">
           <div
             className={clsx(
-              `absolute left-0 top-[5%] transparent-border-text text-[454px] text-[#363636] leading-none z-0 `
+              `absolute left-0 top-[5%] transparent-border-text text-[400px] md:text-[454px] text-[#363636] leading-none z-0 `
             )}
           >
             g
