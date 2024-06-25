@@ -9,13 +9,13 @@ export default function Sidebar() {
         />
       </div>
       <div className="flex justify-between items-start w-full writing-mode-vertical-rl text-orientation-mixed rotate-180 gap-10 pb-[105.94px]">
-        <p className="uppercas text-white text-sm  whitespace-nowrap cursor-pointer">
+        <p className="uppercase text-white text-sm  whitespace-nowrap cursor-pointer hover:scale-125 transition-all">
           Development
         </p>
-        <p className="uppercase text-white text-sm  whitespace-nowrap cursor-pointer">
+        <p className="uppercase text-white text-sm  whitespace-nowrap cursor-pointer hover:scale-125 transition-all">
           Designing
         </p>
-        <p className="uppercase text-white text-sm whitespace-nowrap cursor-pointer">
+        <p className="uppercase text-white text-sm whitespace-nowrap cursor-pointer hover:scale-125 transition-all">
           Digital Marketing
         </p>
       </div>
