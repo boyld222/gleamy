@@ -88,7 +88,7 @@ export default function Header() {
       </div>
       <div className="block lg:hidden" onClick={handleClickMenu}>
         <img
-          className="absolute right-[5.27%] cursor-pointer w-[28px]"
+          className="absolute right-[5.27%] top-[50%] translate-y-[-50%] cursor-pointer w-[28px]"
           src="/images/hamburg.png"
           alt="Menu Icon"
         />
