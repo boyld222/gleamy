@@ -13,8 +13,15 @@ export default function HeroSection({ title }: Props) {
       <StrapLine bgColor="white" />
       <StrapLine bgColor="black" />
       <Reveal className="h-full" classNameItem="h-full" isInitial>
-        <div className="px-[4.76%] pt-[25.55%]  lg:pl-[91.42px] lg:pt-[135.6px] h-full">
-          <p className="capitalize text-[48px] flex flex-wrap items-center md:text-[60px] lg:text-[72px] lg:max-w-[20ch] 2xl:text-[90px]">
+        <div className="relative px-[4.76%] pt-[25.55%]  lg:pl-[91.42px] lg:pt-[4%] h-full">
+          <div
+            className={clsx(
+              `absolute left-0 top-0 transparent-border-text text-[454px] text-[#363636] leading-none z-0`
+            )}
+          >
+            g
+          </div>
+          <p className="capitalize text-[48px] z-10 relative lg:leading-[1.9] flex flex-wrap items-center md:text-[60px] lg:text-[72px] lg:max-w-[20ch] 2xl:text-[90px] ">
             {splitTitle.map((word, i) => (
               <span
                 className={clsx({
