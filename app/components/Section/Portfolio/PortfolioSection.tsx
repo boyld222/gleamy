@@ -10,6 +10,7 @@ import { Autoplay } from "swiper/modules";
 import "./style.css"; //Need manual css because third-party
 import clsx from "clsx";
 import ContentfulImage from "@/lib/contentful-image";
+import { Open_Sans } from "next/font/google";
 
 interface Props {
   section: {
@@ -21,6 +22,11 @@ interface Props {
     };
   }[];
 }
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+});
 
 export default function PortfolioSection({ section }: Props) {
   const newContentArray = Array(3).fill(section).flat(); // just triple the section for the carousel
@@ -79,8 +85,10 @@ export default function PortfolioSection({ section }: Props) {
                   <span className="text-[32px] mb-2 text-center mt-10">
                     {slide.title}
                   </span>
-                  <p className="w-full whitespace-pre-line text-[16px] leading-[1.9] tracking-[0.02em]  capitalize text-center">
-                    <span className="text-[#FF7E21]">●</span> {slide.role}
+                  <p
+                    className={`w-full whitespace-pre-line text-[16px] leading-[1.9] tracking-[0.02em] capitalize text-center ${openSans.className}`}
+                  >
+                    <span className="text-[#FF7E21] mr-2">●</span> {slide.role}
                   </p>
                 </div>
               )}

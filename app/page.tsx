@@ -14,6 +14,8 @@ import PortfolioSection from "./components/Section/Portfolio/PortfolioSection";
 
 export default async function Page() {
   //I call all content api in this place because some of my section will be use in client side rendering
+  //Completely fit with 1920x1080 resolution
+
   const [heroContent, aboutContent, servicesContent, portfolioContent] =
     await Promise.all([
       getTitleHero(),
