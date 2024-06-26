@@ -100,7 +100,7 @@ export default function Header() {
           initial="closed"
           className="bg-black h-[600px] w-[450px] rounded-[25px] relative"
         >
-          {/* Make sure it still animated out when it unmout */}
+          {/* Make sure it still animated out when it unmount */}
           <AnimatePresence>
             {isActive && (
               <Menu routes={routes} handleClickMenu={handleClickMenu} />
